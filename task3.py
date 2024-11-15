@@ -1,19 +1,17 @@
-# module: physical_constants.py
+import numpy as np
+from task1 import g
 
-class PhysicalConstants:
-    g = 9.81 
-import numpy as np  
-alpha = np.radians(30)   
-g = PhysicalConstants.g   
-t_values = np.linspace(0, 5, num=100)  
-results = []
+v0x = int(input ("Введите скорость тела: "))
+x0 = int(input ("Введите начальные координаты по х:") )
+y0 = int(input("Введите начальные координаты по у: "))
 
-for t in t_values:
-    x = v0 * np.cos(alpha) * t
-    y = v0 * np.sin(alpha) * t - 0.5 * g * t**2
-    results.append([t, x, y])
+mas = [["t", "x", "y"]]
 
-results_array = np.array(results)
+for t in range (0,6):
+    x = x0 + v0x * t 
+    y = y0 + v0x * t - g * t**2 /2
+    mas.append([t, x, y])
 
-print("t (с), x (м), y (м)")
-print(results_array)
+mas = np.array(mas)
+print(mas)
+

@@ -1,12 +1,14 @@
 import numpy as np
-N = 5   
-M = 4  
-trigonometry_array = np.zeros((N, M))
 
-for i in range(N):
-    for j in range(M):
-        value = np.sin(N * i + M * j + 1)
-        trigonometry_array[i, j] = max(value, 0)   
- 
-print("Конечный массив:")
+N = int(input ("Ведите значение N: "))
+M = int(input ("Ведите значение М: "))
+
+trigonometry_array = np.zeros ((N, M))
+
+
+for i in range (0, N):
+    for k in range(0, M ):
+        trigonometry_array[i, k] = np.sin(N * i + M * k + 1)
+if trigonometry_array[i, k] < 0:
+    trigonometry_array[i, k] = 0
 print(trigonometry_array)
