@@ -15,12 +15,7 @@ def ellipse(a, b, minimum,maximum, N):
     plt.xlabel("Coord - x")
     plt.ylabel("Coord - y")
     plt.title("elipse")
-    plt.legend()
     plt.grid()
     plt.savefig('fig_task3.png')
 
-ellipse(int(input("Введите значение большой полуоси: ")), 
-int(input("Введите значение малой полуоси: ")), 
-int(input("Введите значение минимального значения Х: ")),
-int(input("Введите значение максимального значения Х: ")),
-int(input("Введите значение N: ")))
+ellipse(6, 4, -10,10,100)

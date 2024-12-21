@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def hyper(minimum, maximum, N):
+
     N = int(N/2)
 
     x = np.linspace(0, maximum, N+1)
@@ -22,4 +23,4 @@ def hyper(minimum, maximum, N):
     
     plt.savefig('fig_task2.png')
 
-hyper(int(input("Введите значение минимума х: ")), int(input("Введите значение максимума х: ")), int(input("Введите значение N: ")))
+hyper(-10, 10, 100)
