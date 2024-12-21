@@ -7,12 +7,12 @@ def hyper(minimum, maximum, N):
     x = np.linspace(0, maximum, N+1)
     x = np.delete(x, 0)
     y = 20/x
-    plt.plot(x, y, color='b', label="my hyperbola")
+    plt.plot(x, y, color='g', label="my hyperbola")
 
     x = np.linspace(minimum, 0, N+1)
     x = np.delete(x, -1)
     y = 20/x
-    plt.plot(x, y, color='b')
+    plt.plot(x, y, color='r')
 
     plt.xlabel("Coord - x")
     plt.ylabel("Coord - y")
