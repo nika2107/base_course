@@ -13,7 +13,7 @@ def hyper(minimum, maximum, N):
     x = np.linspace(minimum, 0, N+1)
     x = np.delete(x, -1)
     y = 20/x
-    plt.plot(x, y, color='r')
+    plt.plot(x, y, color='m')
 
     plt.xlabel("Coord - x")
     plt.ylabel("Coord - y")

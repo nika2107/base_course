@@ -7,7 +7,7 @@ def spiral(k):
     x = r * np.cos(phi)
     y = r * np.sin(phi)
 
-    plt.plot(x, y, label="rose")
+    plt.plot(x, y, color='r',label="rose")
     plt.xlabel("Coord - x")
     plt.ylabel("Coord - y")
     plt.title("rose")

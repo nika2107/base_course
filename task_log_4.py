@@ -7,7 +7,7 @@ def log(b):
     x = r * np.cos(phi)
     y = r * np.sin(phi)
 
-    plt.plot(x, y, label="Логарифмическая спираль")
+    plt.plot(x, y, color='c', label="Логарифмическая спираль")
     plt.xlabel("Coord - x")
     plt.ylabel("Coord - y")
     plt.legend()
