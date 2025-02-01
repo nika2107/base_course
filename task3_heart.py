@@ -2,7 +2,7 @@ from matplotlib.animation import FuncAnimation
 import matplotlib.pyplot as plt
 import numpy as np
 
-def bttrfl(i):
+def a(i):
     t = np.arange(0, i, 0.01)
     x = 16 * (np.sin(t)**3)
     y = 13*np.cos(t) - 5*np.cos(2*t) - 2*np.cos(3*t) - np.cos(4*t)
@@ -10,12 +10,12 @@ def bttrfl(i):
 
 
 def animate(i):
-    butterfly.set_data(bttrfl(i=i))
+    heart.set_data(a(i=i))
 
 
 
 fig, ax = plt.subplots()
-butterfly, = plt.plot([], [], '-', color='crimson', label='Butterfly')
+heart, = plt.plot([], [], '-', color='salmon', label='Butterfly')
 
 edge = 20
 plt.axis('equal')

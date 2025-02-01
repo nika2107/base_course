@@ -16,13 +16,13 @@ def animate(R):
 if __name__ == '__main__':
 
     fig, ax = plt.subplots()
-    ball, = plt.plot([], [], '-', color='lime', label='Ball')
+    ball, = plt.plot([], [], '-', color='lime')
 
     edge = 3
     plt.axis('equal')
     ax.set_xlim(-edge, edge)
     ax.set_ylim(-edge, edge)
     
-    ani = FuncAnimation(fig, animate, frames=np.arange(0, 3, 0.05), interval=30)
+    ani = FuncAnimation(fig, animate, frames=np.arange(0, 3, 0.05), interval=40)
 
-    ani.save('animation_task2.gif')
+    ani.save('circle_move.gif')
