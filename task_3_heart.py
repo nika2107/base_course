@@ -15,9 +15,9 @@ def animate(i):
 
 
 fig, ax = plt.subplots()
-heart, = plt.plot([], [], '-', color='salmon', label='Butterfly')
+heart, = plt.plot([], [], '-', color='salmon')
 
-edge = 20
+edge = 25
 plt.axis('equal')
 ax.set_xlim(-edge, edge)
 ax.set_ylim(-edge, edge)
