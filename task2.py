@@ -16,7 +16,7 @@ def animate(R):
 if __name__ == '__main__':
 
     fig, ax = plt.subplots()
-    ball, = plt.plot([], [], '-', color='r', label='Ball')
+    ball, = plt.plot([], [], '-', color='lime', label='Ball')
 
     edge = 3
     plt.axis('equal')

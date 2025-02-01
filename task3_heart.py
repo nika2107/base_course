@@ -15,7 +15,7 @@ def animate(i):
 
 
 fig, ax = plt.subplots()
-butterfly, = plt.plot([], [], '-', color='r', label='Butterfly')
+butterfly, = plt.plot([], [], '-', color='crimson', label='Butterfly')
 
 edge = 20
 plt.axis('equal')
