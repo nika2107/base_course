@@ -25,4 +25,4 @@ ax.set_ylim(-edge, edge)
 
 ani = FuncAnimation(fig, animate, frames=np.arange(0, 2*np.pi, 0.1), interval=100)
 
-ani.save("animation_heart.gif")
+ani.save("heart.gif")
